@@ -3,7 +3,7 @@ Simulation a three lane highway with overtaking/lane-changing(for 2 and 3 lanes)
 
 ## Sub-projects
 1. [**NS Traffic model**](https://github.com/LI-Sirui/NS-and-KKS-TrafficModel/blob/main/Road1.py). Simulate a one-lane highway.
-2. KKS traffic model. Simulate a two-lane highway with overtraking/lane-changing.
+2. [**KKS traffic model**](https://github.com/LI-Sirui/NS-and-KKS-TrafficModel/blob/main/Multi_lane_KKS.py). Simulate a two-lane highway with overtraking/lane-changing.
 
 
 ### Final project
