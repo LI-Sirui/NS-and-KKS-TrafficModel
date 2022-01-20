@@ -69,13 +69,13 @@ class Road:
                 car.v += 1
 
             # Rule 2, hold the safetied distance d=5 between two car， 保持车距
-            d = (self.carlist[i - 1].pos - self.carlist[i].pos + self.road_length) % self.road_length
-            if self.carlist[i].v >= d != 0:
-                self.carlist[i].v = d - 1
+            d = (self.carlist[i - 1].pos - car.pos + self.road_length) % self.road_length
+            if car.v >= d != 0:
+                car.v = d - 1
 
             # Rule 3, Random slowdown with probability p， 随机减速
-            if self.carlist[i].v > 0 and random.random() < p:
-                self.carlist[i].v -= 1
+            if car.v > 0 and random.random() < p:
+                car.v -= 1
 
         # Rule 4 update position of the cars
         self.update_pos()
